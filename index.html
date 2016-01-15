@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="source/css/main.css">
+		<title>Example</title>
+	</head>
+	<body>
+			<header>
+				<h1><strong>MyMap</strong> for you</h1>
+			</header>
+			<nav>
+			 <a href="#about">ABOUT</a><!--
+			 --><a href="#Demo">DEMO</a><!--
+			 --><a href="#Story">STORY</a>
+			</nav>
+		<article>
+			<section, id="about">
+				<header>
+					<h2>What is this all about ?</h2>
+				</header>
+				<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius consulatu suo septies et Caesaris ter egressus Arelate Valentiam petit, in Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum</p>
+				<blockquote>Nobilem est inpulit arbitror est ulla nec hoc est ulla nec est rata nunc quae.</blockquote>
+				<p>At nunc si ad aliquem bene nummatum tumentemque ideo honestus advena salutatum introieris, primitus tamquam exoptatus suscipieris et interrogatus multa coactusque mentiri, miraberis numquam antea visus summatem virum tenuem te sic enixius observantem, ut paeniteat ob haec bona tamquam praecipua non vidisse ante decennium Romam.</p>
+				<p>Ut enim benefici liberalesque <a href="#">sumus</a>, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.</p>
+				<ul>
+					<li>first</li>
+					<li>second 
+						<ol>
+							<li>second first</li>
+							<li>second second</li>
+						</ol>
+					</li>
+					<li>third</li>
+				</ul>
+				<p>Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. arbitrabantur enim nullo inpediente transgressi inopino adcursu adposita quaeque vastare, sed in cassum labores pertulere gravissimos.</p>
+			</section>
+			<section>
+				<header>
+					<h2>Show the Map !</h2>
+				</header>
+				<p>Code :</p>
+				<figure>
+				<pre>
+					<code>
+ if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+	        var data = d3.nest()
+	          .key(function(d){
+	            //return opts.group === undefined ? 'main' : d[opts.group]
+	            //instead of main would think a better default is opts.x
+	            return opts.group === undefined ? opts.y : d[opts.group];
+	          })
+	          .entries(data);
+	      }
+	      
+	      if (opts.disabled != undefined){
+	        data.map(function(d, i){
+	          d.disabled = opts.disabled[i]
+	        })
+	      }
+					</code>
+				</pre>
+				<caption>This is a useful code</caption>
+				</figure>
+				<p>Bla Bla</p>
+			</section>
+				<header>
+					<h2>Story</h2>
+				</header>
+			<section, id="Story">
+				<p>Nec piget dicere avide magis hanc insulam populum Romanum invasisse quam iuste. Ptolomaeo enim rege foederato nobis et socio ob aerarii nostri angustias iusso sine ulla culpa proscribi ideoque hausto veneno voluntaria morte deleto et tributaria facta est et velut hostiles eius exuviae classi inpositae in urbem advectae sunt per Catonem, nunc repetetur ordo gestorum.</p>
+				<p><a href="#">Download !</a></p>
+			</section>
+		</article>
+		<footer>
+			<a href="https://github.com/KrysD"><img src="source/img/favicon.ico"></a>
+		</footer>
+	</body>
+</html>

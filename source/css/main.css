@@ -1,0 +1,67 @@
+body{
+	background: #32908f;
+	font-family: 'Droid Sans', sans-serif;
+ 	margin: 0;
+ 	color:#a3e7fc;
+}
+
+header{
+	color:#d41f1f;
+}
+
+body header{
+	text-align: center;
+	font-family: 'Source Sans Pro'
+	color:#d41f1f;
+	padding : 2em 0;
+}
+
+footer > a::before{
+	content : '\21E7';
+	background-color: #d41f1f;
+	text-decoration: none;
+	transform : rotate(180deg);
+}
+
+article, nav, footer, div{
+ 	margin-right: 20%;
+ 	margin-left: 20%;
+}
+
+nav{
+	text-align: center;
+	text-decoration: none;
+}
+
+nav a{
+	font-weight: bold;
+	display: inline-block;
+	background: #d41f1f;
+	padding: 1em 0;
+	width:30%;
+	margin : 0.1rem 0.1rem 1.5rem 0.1rem;
+	text-decoration: none;
+	color:white;
+	transition : transform 200ms ease-in-out;
+}
+
+nav a:hover{
+transform : scale(1.1);
+}
+
+h1{
+	text-align: center;
+}
+
+strong{
+	font-size: 4em;
+	margin-right: -1em;
+	margin-top: -2em;
+}
+
+pre{
+	background-color: black;
+	border-radius: 5px;
+	border-color: #ea870d;
+	color:white;
+}
