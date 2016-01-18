@@ -1,0 +1,22 @@
+[
+	{
+		"name" : "Plance1",
+		"long" : 0.2133,
+		"lat" : 43.33
+	},
+		{
+		"name" : "Plance2",
+		"long" : -0.53,
+		"lat" : 47.21
+	},
+		{
+		"name" : "Plance3",
+		"long" : 0.35,
+		"lat" : 42.21
+	},
+		{
+		"name" : "Plance4",
+		"long" : 0.2555,
+		"lat" : 44.23
+	}
+]
