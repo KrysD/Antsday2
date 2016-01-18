@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose readDependencies loading dependencies from C:\Users\ZQ5239\Documents\Formation Ants\clone\AntColony\package.json
+5 warn package.json AntColony@0.1.0 No repository field.
+6 verbose install where, deps [ 'C:\\Users\\ZQ5239\\Documents\\Formation Ants\\clone\\AntColony',
+6 verbose install   [ 'delaunay-triangulate', 'parse-svg-path' ] ]
+7 verbose install where, peers [ 'C:\\Users\\ZQ5239\\Documents\\Formation Ants\\clone\\AntColony',
+7 verbose install   [] ]
+8 verbose installManyTop reading for lifecycle C:\Users\ZQ5239\Documents\Formation Ants\clone\AntColony\package.json
+9 info preinstall AntColony@0.1.0
+10 verbose readDependencies loading dependencies from C:\Users\ZQ5239\Documents\Formation Ants\clone\AntColony\package.json
+11 silly cache add args [ 'delaunay-triangulate@^1.1.6', null ]
+12 verbose cache add spec delaunay-triangulate@^1.1.6
+13 silly cache add args [ 'parse-svg-path@^0.1.1', null ]
+14 verbose cache add spec parse-svg-path@^0.1.1
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'delaunay-triangulate@^1.1.6',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'delaunay-triangulate',
+15 silly cache add   rawSpec: '^1.1.6',
+15 silly cache add   spec: '>=1.1.6 <2.0.0',
+15 silly cache add   type: 'range' }
+16 silly addNamed delaunay-triangulate@>=1.1.6 <2.0.0
+17 verbose addNamed ">=1.1.6 <2.0.0" is a valid semver range for delaunay-triangulate
+18 silly addNameRange { name: 'delaunay-triangulate',
+18 silly addNameRange   range: '>=1.1.6 <2.0.0',
+18 silly addNameRange   hasData: false }
+19 silly mapToRegistry name delaunay-triangulate
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/delaunay-triangulate
+23 verbose addNameRange registry:https://registry.npmjs.org/delaunay-triangulate not in flight; fetching
+24 silly cache add parsed spec Result {
+24 silly cache add   raw: 'parse-svg-path@^0.1.1',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'parse-svg-path',
+24 silly cache add   rawSpec: '^0.1.1',
+24 silly cache add   spec: '>=0.1.1 <0.2.0',
+24 silly cache add   type: 'range' }
+25 silly addNamed parse-svg-path@>=0.1.1 <0.2.0
+26 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for parse-svg-path
+27 silly addNameRange { name: 'parse-svg-path',
+27 silly addNameRange   range: '>=0.1.1 <0.2.0',
+27 silly addNameRange   hasData: false }
+28 silly mapToRegistry name parse-svg-path
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/parse-svg-path
+32 verbose addNameRange registry:https://registry.npmjs.org/parse-svg-path not in flight; fetching
+33 verbose request uri https://registry.npmjs.org/delaunay-triangulate
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 13:47:28
+36 verbose request id df1880f556e71557
+37 http request GET https://registry.npmjs.org/delaunay-triangulate
+38 verbose request uri https://registry.npmjs.org/parse-svg-path
+39 verbose request no auth needed
+40 info attempt registry request try #1 at 13:47:28
+41 http request GET https://registry.npmjs.org/parse-svg-path
+42 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.17.162:443
+43 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.17.162:443
+44 info attempt registry request try #2 at 13:47:59
+45 http request GET https://registry.npmjs.org/parse-svg-path
+46 info attempt registry request try #2 at 13:47:59
+47 http request GET https://registry.npmjs.org/delaunay-triangulate
+48 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.17.162:443
+49 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 185.31.17.162:443
+50 info attempt registry request try #3 at 13:49:20
+51 http request GET https://registry.npmjs.org/delaunay-triangulate
+52 info attempt registry request try #3 at 13:49:20
+53 http request GET https://registry.npmjs.org/parse-svg-path
+54 verbose stack Error: connect ETIMEDOUT 185.31.17.162:443
+54 verbose stack     at Object.exports._errnoException (util.js:870:11)
+54 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+54 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1063:14)
+55 verbose cwd C:\Users\ZQ5239\Documents\Formation Ants\clone\AntColony
+56 error Windows_NT 6.1.7601
+57 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+58 error node v4.2.4
+59 error npm  v2.14.12
+60 error code ETIMEDOUT
+61 error errno ETIMEDOUT
+62 error syscall connect
+63 error network connect ETIMEDOUT 185.31.17.162:443
+63 error network This is most likely not a problem with npm itself
+63 error network and is related to network connectivity.
+63 error network In most cases you are behind a proxy or have bad network settings.
+63 error network
+63 error network If you are behind a proxy, please make sure that the
+63 error network 'proxy' config is set properly.  See: 'npm help config'
+64 verbose exit [ 1, true ]
